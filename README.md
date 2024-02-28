@@ -17,7 +17,7 @@ choice in turnover prediction for improved employee retention and reduced cost o
 - Renamed columns and corrected spelling, changed names to snake_case, and made them more concise as needed.
   e.g., 'average_montly_hours' [sic] becomes 'monthly_hours.'
 - Checked for missing values
-- Removed duplicates with the method, drop_duplicates()
+- Removed duplicates with the method, .drop_duplicates()
 
 ### Exploratory Data Analysis
 - Examined counts of employees who left vs those who stayed.
@@ -30,16 +30,16 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - Department converted to numeric values with pd.get_dummies.
 
 ### Modeling
-- Set column 'left' as the Target, y.
-- Set all other columns as X
-- Split the data into training/test splits of 80/20 by setting test_size = 0.20.
-  - X_tr, X_test, y_tr, y_test
+- Set column 'left' as the Target, y.  "Left" means the employee left the company.
+- All other columns are features and were set as X.
+- Split the data into training/validate/test splits of 80/20/20
+  - X_tr, X_test, y_tr, y_test and set test_size = 0.20.
+  - Followed by X_train, X_val, y_train, y_val with test_size = 0.25.
 - Set stratify = y due to imbalanced data
-- Split the data into train and validate sets
-  - X_train, X_val, y_train, y_val with test_size = 0.25.
-
+- Used the "validate" set to evaluate the model’s performance during training and tune hyperparameters.
+  
 ### XGBoost Classifier
-- Instantiated the XGBoost classifier xgb and set objective='binary:logistic'. 
+- Instantiated the XGBoost classifier and set objective='binary:logistic'. 
 - Tuned the following hyperparameters (cv_params). 
   - 'max_depth': [8,None], 
   - 'min_child_weight': [1,5],
