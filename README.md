@@ -12,26 +12,26 @@ choice in turnover prediction for improved employee retention and reduced cost o
 - Jupyter Notebook: Data Cleaning, Data Analysis, Modeling, and Visualizations
 
 ### Data Cleaning
-- Run **.info()** to gather basic information about the data
-- Run **.describe()** for descriptive statistics
-- Rename columns and correct spelling, change names to snake_case, and make them more concise as needed.
+- Executed **.info()** to gather basic information about the data
+- Executed **.describe()** for descriptive statistics
+- Renamed columns and correct spelling, change names to snake_case, and make them more concise as needed.
   e.g., 'average_montly_hours' [sic] becomes 'monthly_hours.'
-- Check for missing values
-- Remove duplicates with the method, drop_duplicates()
+- Checked for missing values
+- Removed duplicates with the method, drop_duplicates()
 
 ### Exploratory Data Analysis
-- Examine counts of employees who left vs those who stayed.
-  - In this data set, 16.6% left, 83.4 stayed.
-  - Ratio is approximately the same when grouped by Department
+- Examined counts of employees who left vs those who stayed.
+  - In this data set, 16.6% of employees left, 83.4% stayed.
+  - This ratio is approximately the same when grouped by Department.
   
 ### Data Preparation
-- Convert categorical columns into numeric columns.
+- Converted categorical columns into numeric columns.
   - Salary from low, medium, high to 0, 1, 2.
   - Department converted to numeric values with pd.get_dummies.
 
 ### Modeling
 - Set column 'left' as the Target, y.
-  - Set all other columns as X
+- Set all other columns as X
 - Split the data into training/test splits of 80/20 by setting test_size = 0.20.
   - X_tr, X_test, y_tr, y_test
 - Set stratify = y due to imbalanced data
