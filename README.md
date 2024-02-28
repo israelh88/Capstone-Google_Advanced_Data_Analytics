@@ -83,3 +83,25 @@ As for tenure, there's something unusual about the higher tendency to leave the 
 
 ### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
+
+
+### Conclusion, Recommendations, Next Steps
+XGBoost model is an excellent model at predicting whether an employee will leave the company. The stat scores are as follows: model precision recall F1 accuracy XGB test 0.968504 0.927136 0.947368 0.98291
+Top 5 features in order of greatest importance. 1. satisfaction_level ('satisfaction') 2. average_monthly_hours 3. last_evaluation 4. number_project 5. tenure
+
+Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
+
+As for employee satisfaction, it is no surprise that less employee satisfaction is a predictor of turnover. See partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
+
+As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity else where.
+
+As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
+
+Also it is not unexpected that number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+
+###Recommendations/Next Steps:
+
+Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees workload, or number of projects.
+Look into ways to alleviate the load on those with 6 or more projects--possible hiring more help? This in turn could help with the monthly hours worked.
+Ascertain why employees leave at 5 years of enture.
+For employees with excellent evaluations, discuss what incentives would help keep these talented individuals.
