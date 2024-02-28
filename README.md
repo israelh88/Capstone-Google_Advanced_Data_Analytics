@@ -33,33 +33,37 @@ choice in turnover prediction for improved employee retention and reduced cost o
 ### Modeling
 - Set column 'left' as the Target, y.
   - Set all other columns as X
-- Split the data into training/test splits of 80/20 by setting test_size = 0.2
+- Split the data into training/test splits of 80/20 by setting test_size = 0.20.
+  - X_tr, X_test, y_tr, y_test
 - Set stratify = y due to imbalanced data
-- Split the data into train and validate sets 
+- Split the data into train and validate sets
+  - X_train, X_val, y_train, y_val with test_size = 0.25.
 
 ### XGBoost Details
-- Instantiate the XGBoost classifier xgb and set objective='binary:logistic'. Also set the random state.
-- Tune the following hyperparameters (cv_params). 
-  - max_depth
-  - min_child_weight
-  - learning_rate
-  - n_estimators
-- Define a set scoring of scoring metrics for grid search to capture (precision, recall, F1 score, and accuracy).
-- Instantiate the GridSearchCV object xgb_cv. Pass to it as arguments:
-  - estimator=xgb
-  - param_grid=cv_params
-  - scoring=scoring
-  - cv: define the number of cross-validation folds you want (cv=4 for this project)
-- Use refit = 'recall' to minimize false negatives (predicting an employee will stay when they leave)
+- Instantiated the XGBoost classifier xgb and set objective='binary:logistic'. 
+- Tuned the following hyperparameters (cv_params). 
+  - 'max_depth': [8,None], 
+  - 'min_child_weight': [1,5],
+  - 'learning_rate': [0.2,0.3,0.4],
+  - 'n_estimators': [50, 100]
+- Instantiated the GridSearchCV object xgb_cv. 
+- Used refit = 'recall' to minimize false negatives (predicting an employee will stay when they, in fact, leave)
 
- ### Fit the model to train the data
+ ### Model Fit Results on Training data
 - xgb_cv.fit(X_train, y_train)
-- Get the best score: xgb_cv.best_params_
-  - Result = 0.9121
-- Get the best parameter settings with xgb_cv.best_params_
+- Best score with xgb_cv.best_score_ = 0.9121
+- Best parameter settings with xgb_cv.best_params_
   - 'learning_rate': 0.3,
   - 'max_depth': None,
   - 'min_child_weight': 5,
   - 'n_estimators': 50
  
-  
+  ### Run the XGB model to predict on the validation data
+  - XGB_val_preds = xgb_cv.best_estimator_.predict(X_val)
+  - Recall = 0.9171
+
+  ### Use the XGBoost model to predict on test data
+  - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
+  - Recall = 0.9271
+ 
+    
