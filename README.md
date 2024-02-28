@@ -57,11 +57,11 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - 'min_child_weight': 5,
   - 'n_estimators': 50
  
-### Used the XGBoost model to predict on the validation data
+### Applied the XGBoost model to predict on the validation data
   - XGB_val_preds = xgb_cv.best_estimator_.predict(X_val)
   - Recall = 0.9171
 
-### Used the XGBoost model to predict on test data
+### Applied the XGBoost model to predict on the test data
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
