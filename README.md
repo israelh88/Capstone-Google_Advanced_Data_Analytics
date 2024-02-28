@@ -6,15 +6,15 @@ HR requested that a data analyst review the results from an employee satisfactio
 can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent   
 choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
 ### Data Sources
-- A csv file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
+- A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
   
 ### Tools
-- Jupyter Notebook: Data Cleaning, Data Analysis, Modeling, and Visualizations
+- I used a Jupyter Notebook for the entire project including the Data Cleaning, Data Analysis, Modeling, and Visualization.
 
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
 - Executed **.describe()** for descriptive statistics
-- Renamed columns and correct spelling, change names to snake_case, and make them more concise as needed.
+- Renamed columns and corrected spelling, changed names to snake_case, and made them more concise as needed.
   e.g., 'average_montly_hours' [sic] becomes 'monthly_hours.'
 - Checked for missing values
 - Removed duplicates with the method, drop_duplicates()
@@ -24,7 +24,7 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - In this data set, 16.6% of employees left, 83.4% stayed.
   - This ratio is approximately the same when grouped by Department.
   
-### Data Preparation
+### Data Preparation for Modeling
 - Converted categorical columns into numeric columns.
   - Salary from low, medium, high to 0, 1, 2.
   - Department converted to numeric values with pd.get_dummies.
@@ -66,12 +66,12 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - Recall = 0.9271
  
 ### Summary of Model Results
-The Top 5 features per the feature importance chart: It is no surprise that less employee satisfaction is a predictor of turnover. See partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
-Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, for lighter weeks at < 40 hrs, the employees tend to leave as well.
+It is no surprise that less employee satisfaction is a predictor of turnover. See the partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
+Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 average monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, for lighter weeks at < 40 hrs, the employees tend to leave as well.
 
-As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity else where.
+As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
 
-Also it is not unexpected that number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 
@@ -86,7 +86,8 @@ As for tenure, there's something unusual about the higher tendency to leave the 
 
 
 ### Conclusion
-XGBoost model is an excellent model at predicting whether an employee will leave the company. The stat scores are as follows: model precision recall F1 accuracy XGB test 0.968504 0.927136 0.947368 0.98291
+XGBoost model is an excellent model for predicting whether an employee will leave the company. The stat scores are as follows: model recall score is 0.927136
+
 Top 5 features in order of greatest importance. 1. satisfaction_level ('satisfaction') 2. average_monthly_hours 3. last_evaluation 4. number_project 5. tenure
 
 Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
