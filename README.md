@@ -10,7 +10,6 @@ choice in turnover prediction for improved employee retention and reduced cost o
 
 ### Tools
 - Jupyter Notebook: Data Cleaning, Data Analysis, Modeling, and Visualizations
-- (list libraries??)
 
 ### Data Cleaning
 - Run **.info()** to gather basic information about the data
@@ -39,7 +38,7 @@ choice in turnover prediction for improved employee retention and reduced cost o
 - Split the data into train and validate sets
   - X_train, X_val, y_train, y_val with test_size = 0.25.
 
-### XGBoost Details
+### XGBoost Classifier
 - Instantiated the XGBoost classifier xgb and set objective='binary:logistic'. 
 - Tuned the following hyperparameters (cv_params). 
   - 'max_depth': [8,None], 
@@ -49,7 +48,7 @@ choice in turnover prediction for improved employee retention and reduced cost o
 - Instantiated the GridSearchCV object xgb_cv. 
 - Used refit = 'recall' to minimize false negatives (predicting an employee will stay when they, in fact, leave)
 
- ### Model Fit Results on Training data
+### Model Fit Results on Training data
 - xgb_cv.fit(X_train, y_train)
 - Best score with xgb_cv.best_score_ = 0.9121
 - Best parameter settings with xgb_cv.best_params_
@@ -58,12 +57,14 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - 'min_child_weight': 5,
   - 'n_estimators': 50
  
-  ### Run the XGB model to predict on the validation data
+### Used the XGBoost model to predict on the validation data
   - XGB_val_preds = xgb_cv.best_estimator_.predict(X_val)
   - Recall = 0.9171
 
-  ### Use the XGBoost model to predict on test data
+### Used the XGBoost model to predict on test data
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
-    
+### Summary of Model Results
+### Confusion Matrix
+
