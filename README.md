@@ -67,5 +67,5 @@ choice in turnover prediction for improved employee retention and reduced cost o
  
 ### Summary of Model Results
 ### Confusion Matrix
-!"SalifortCapstoneProjectConfusionMatrix"https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20014809.png?raw=true
+!["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20014809.png?raw=true)
 
