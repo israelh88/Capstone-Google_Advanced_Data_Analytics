@@ -66,9 +66,20 @@ choice in turnover prediction for improved employee retention and reduced cost o
   - Recall = 0.9271
  
 ### Summary of Model Results
-### Confusion Matrix
-!["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
+The Top 5 features per the feature importance chart: It is no surprise that less employee satisfaction is a predictor of turnover. See partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
+Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, for lighter weeks at < 40 hrs, the employees tend to leave as well.
+
+As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity else where.
+
+Also it is not unexpected that number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+
+As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
+
 ### Feature Importance
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
+
+### Confusion Matrix
+!["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
+
 ### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
