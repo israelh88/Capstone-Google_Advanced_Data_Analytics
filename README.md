@@ -6,8 +6,8 @@ HR requested that a data analyst review the results from an employee satisfactio
 can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent   
 choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
 ### Data Sources
-- csv file provided by Google for the capstone project.
-
+- A csv file for the capstone project was provided by Google/Coursera.
+  
 ### Tools
 - Jupyter Notebook: Data Cleaning, Data Analysis, Modeling, and Visualizations
 
