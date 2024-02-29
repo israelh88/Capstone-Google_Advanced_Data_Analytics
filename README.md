@@ -14,8 +14,7 @@ You can view the Executive Summary in PowerPoint.
 - [Data Cleaning](#data-cleaning) 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Preparation for Modeling](#data-preparation-for-modeling)
-- [Modeling](#modeling)
-- [XGBoost Classifier](#xgboost-classifier)
+- [XGBoost Binomial Classification](#xgboost-binomial-classification)
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
@@ -59,7 +58,7 @@ You can view the Executive Summary in PowerPoint.
 - Set stratify = y due to imbalanced data
 - Used the "validate" set to evaluate the model’s performance during training and tune hyperparameters.
   
-### XGBoost Classifier
+### XGBoost Binomial Classification
 - Instantiated the XGBoost classifier and set objective='binary:logistic'. 
 - Tuned the following hyperparameters (cv_params). 
   - 'max_depth': [8,None], 
