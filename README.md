@@ -4,7 +4,7 @@
 ## Project Overview
 In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
 
-I've included an [Executive Summary](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/e6d618652a6fd2c2aba053f77534012698132b73/Salifort%20Capstone%20Project%20-%20Executive%20Summary%20ih.pdf) here.
+Follow this link for my [Executive Summary](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/e6d618652a6fd2c2aba053f77534012698132b73/Salifort%20Capstone%20Project%20-%20Executive%20Summary%20ih.pdf).
 
 ## Table of Contents
 - [Data Sources](#data-sources)
