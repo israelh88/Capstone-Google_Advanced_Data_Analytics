@@ -86,14 +86,14 @@ You can view the Executive Summary in PowerPoint.
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
-## Visualization
-### Feature Importance
+## Results
+#### Feature Importance
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-### Confusion Matrix
+#### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
-### Partial Dependence
+#### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
 
 ## Conclusion
