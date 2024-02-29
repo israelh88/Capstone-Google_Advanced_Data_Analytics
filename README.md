@@ -21,6 +21,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
     - [Feature Importance](#feature-importance)
     - [Partial Dependence](#partial-dependence)
 - [Conclusion](#conclusion)
+    - [Insights](#insights)
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
@@ -107,6 +108,8 @@ As for last_evaluation, better performance leads to an employee leaving, perhaps
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 
 Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+
+### Insights
 
 ### Recommendation/Next Steps:
 Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees' workload, or number of projects.
