@@ -27,7 +27,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
   
 ### Tools
-- I used a Jupyter Notebook for the entire project including the Data Cleaning, Data Analysis, Modeling, and Visualization.
+- Jupyter Notebook for the entire project including Data Cleaning, Data Analysis, Modeling, and Visualization.
 
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
