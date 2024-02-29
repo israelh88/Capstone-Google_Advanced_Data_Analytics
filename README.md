@@ -2,11 +2,9 @@
 ## Salifort Employee Retention Project. Prepared for Salifort HR & Leadership Team
 
 ## Project Overview
-HR requested that a data analyst review the results from an employee satisfaction survey to develop a model that  
-can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent   
-choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
+In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
 
-You can view the Executive Summary in PowerPoint.
+I've included an Executive Summary here.
 
 ## Table of Contents
 - [Data Sources](#data-sources)
