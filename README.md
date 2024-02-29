@@ -50,7 +50,7 @@ I've included an Executive Summary here.
 ### Modeling
 - Set column 'left' as the Target, y.  "Left" means the employee left the company.
 - All other columns are features and were set as X.
-- Split the data into training/validate/test splits of 80/20/20
+- Split the data into training/validate/test splits of 60/20/20
   - X_tr, X_test, y_tr, y_test and set test_size = 0.20.
   - Followed by X_train, X_val, y_train, y_val with test_size = 0.25.
 - Set stratify = y due to imbalanced data
