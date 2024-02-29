@@ -19,7 +19,7 @@ You can view the Executive Summary in PowerPoint.
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
-- [Visualization](#visualization)
+- [Results](#results)
 - [Confusion Matrix](#confusion-matrix)
 - [Feature Importance](#feature-importance)
 - [Partial Dependence](#partial-dependence)
