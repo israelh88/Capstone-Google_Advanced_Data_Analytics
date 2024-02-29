@@ -12,9 +12,14 @@ You can view the Executive Summary in PowerPoint.
 - [Data Sources](#data-sources)
 - [Tools](#tools)
 - [Data Cleaning](#data-cleaning) 
-
-
-
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Preparation for Modeling](#data-preparation-for-modeling)
+- [Modeling](#modeling)
+- [XGBoost Classifier](#xgboost-classifier)
+- [Model Results on Training Data](#model-results-on-training-data)
+- [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
+- [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
+- 
 ### Data Sources
 - A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
   
@@ -58,7 +63,7 @@ You can view the Executive Summary in PowerPoint.
 - Instantiated the GridSearchCV object xgb_cv. 
 - Used refit = 'recall' to minimize false negatives (predicting an employee will stay when they, in fact, leave)
 
-### Model Fit Results on Training data
+### Model Results on Training Data
 - xgb_cv.fit(X_train, y_train)
 - Best score with xgb_cv.best_score_ = 0.9121
 - Best parameter settings with xgb_cv.best_params_
@@ -67,11 +72,11 @@ You can view the Executive Summary in PowerPoint.
   - 'min_child_weight': 5,
   - 'n_estimators': 50
  
-### Applied the XGBoost model to predict on the validation data
+### XGBoost Predict on Validation Data
   - XGB_val_preds = xgb_cv.best_estimator_.predict(X_val)
   - Recall = 0.9171
 
-### Applied the XGBoost model to predict on the test data
+### XGBoost Predict on Test Data
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
@@ -110,7 +115,7 @@ As for tenure, there's something unusual about the higher tendency to leave the 
 
 Also it is not unexpected that number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
-###Recommendation/Next Steps:
+### Recommendation/Next Steps:
 Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees workload, or number of projects.
 Look into ways to alleviate the load on those with 6 or more projects--possible hiring more help? This in turn could help with the monthly hours worked.
 Ascertain why employees leave at 5 years of enture.
