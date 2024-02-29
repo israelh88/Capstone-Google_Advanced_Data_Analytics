@@ -19,7 +19,11 @@ You can view the Executive Summary in PowerPoint.
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
-- 
+- [Summary of Model Results](#summary-of-model-results)
+- [Confusion Matrix](#confusion-matrix)
+- [Feature Importance](#feature-importance)
+- [Partial Dependence](#partial-dependence)
+  
 ### Data Sources
 - A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
   
@@ -107,16 +111,16 @@ Top 5 features in order of greatest importance. 1. satisfaction_level ('satisfac
 
 Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
 
-As for employee satisfaction, it is no surprise that less employee satisfaction is a predictor of turnover. See partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
+As for employee satisfaction, it is no surprise that less employee satisfaction is a predictor of turnover. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 
-As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity else where.
+As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
 
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 
-Also it is not unexpected that number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
 ### Recommendation/Next Steps:
-Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees workload, or number of projects.
-Look into ways to alleviate the load on those with 6 or more projects--possible hiring more help? This in turn could help with the monthly hours worked.
-Ascertain why employees leave at 5 years of enture.
+Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees' workload, or number of projects.
+Look into ways to alleviate the load on those with 6 or more projects--possibly hiring more help? This in turn could help with the monthly hours worked.
+Ascertain why employees leave at 5 years of tenure.
 For employees with excellent evaluations, discuss what incentives would help keep these talented individuals.
