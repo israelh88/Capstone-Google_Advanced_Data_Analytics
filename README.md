@@ -1,13 +1,20 @@
 # Capstone Project for Google Advanced Data Analytics Professional Certificate
 ## Salifort Employee Retention Project. Prepared for Salifort HR & Leadership Team
 
-## Table of Contents
-- [Project Overview](#project-overview)
-
-### Project Overview
+## Project Overview
 HR requested that a data analyst review the results from an employee satisfaction survey to develop a model that  
 can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent   
 choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
+
+You can view the Executive Summary in PowerPoint.
+
+## Table of Contents
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning](#data-cleaning) 
+
+
+
 ### Data Sources
 - A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
   
