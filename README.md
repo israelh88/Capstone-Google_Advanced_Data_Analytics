@@ -19,10 +19,12 @@ You can view the Executive Summary in PowerPoint.
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
-- [Summary of Model Results](#summary-of-model-results)
+- [Visualization](#visualization)
 - [Confusion Matrix](#confusion-matrix)
 - [Feature Importance](#feature-importance)
 - [Partial Dependence](#partial-dependence)
+- [Conclusion](#conclusion)
+- [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
 - A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
@@ -84,16 +86,7 @@ You can view the Executive Summary in PowerPoint.
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
-## Summary of Model Results
-It is no surprise that less employee satisfaction is a predictor of turnover. See the partial dependence chart below. Satisfaction of 0.1 or less is a definite walk.
-Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 average monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, for lighter weeks at < 40 hrs, the employees tend to leave as well.
-
-As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
-
-Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
-
-As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
-
+## Visualization
 ### Feature Importance
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
@@ -102,7 +95,6 @@ As for tenure, there's something unusual about the higher tendency to leave the 
 
 ### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
-
 
 ## Conclusion
 XGBoost model is an excellent model for predicting whether an employee will leave the company. The stat scores are as follows: model recall score is 0.927136
