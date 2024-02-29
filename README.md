@@ -20,9 +20,9 @@ You can view the Executive Summary in PowerPoint.
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
 - [Results](#results)
- - [Confusion Matrix](#confusion-matrix)
- - [Feature Importance](#feature-importance)
- - [Partial Dependence](#partial-dependence)
+    - [Confusion Matrix](#confusion-matrix)
+    - [Feature Importance](#feature-importance)
+    - [Partial Dependence](#partial-dependence)
 - [Conclusion](#conclusion)
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
   
