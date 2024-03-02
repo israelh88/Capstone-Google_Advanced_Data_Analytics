@@ -85,8 +85,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
   - Recall = 0.9271
  
 ## Results
-#### Feature Importance
-!["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
+
 
 
 
@@ -98,9 +97,11 @@ XGBoost model is an excellent model for predicting whether an employee will leav
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
-Top 5 features in order of greatest importance. 1. satisfaction_level ('satisfaction') 2. average_monthly_hours 3. last_evaluation 4. number_project 5. tenure
+Focus on the Top 5 features in order of greatest importance shown in the plot below. 
+#### Feature Importance
+!["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
+- Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
 
 As for employee satisfaction, it is no surprise that less employee satisfaction is a predictor of turnover. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 
