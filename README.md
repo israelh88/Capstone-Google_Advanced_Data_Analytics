@@ -16,10 +16,6 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
-- [Results](#results)
-    - [Confusion Matrix](#confusion-matrix)
-    - [Feature Importance](#feature-importance)
-    - [Partial Dependence](#partial-dependence)
 - [Conclusion](#conclusion)
     - [Insights](#insights)
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
@@ -84,13 +80,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
-## Results
 
-
-
-
-#### Partial Dependence
-![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
 
 ## Conclusion
 XGBoost model is an excellent model for predicting whether an employee will leave the company. The best recall score is 0.927136. There are only 29 employees identified incorrectly as staying that actually left as shown in the Confusion Matrix below.
@@ -101,15 +91,14 @@ Focus on the Top 5 features in order of greatest importance shown in the plot be
 #### Feature Importance
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-- Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. At 250 ave monthly hrs, which is ~63 hrs per week, employees are most likely to leave. Also, at < 40 hrs per week, the employees tend to leave as well.
+- Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. Employees are most likely to leave when averaging 250 hours per month, which is approximately 63 hours per week on average. Similarly, there is a tendency for employees to leave when working less than 40 hours per week.”
+#### Partial Dependence
+![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
 
-As for employee satisfaction, it is no surprise that less employee satisfaction is a predictor of turnover. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
-
-As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
-
-As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
-
-Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+- As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
+- As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
+- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
+- Also, it is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
 ### Insights
 
