@@ -88,14 +88,15 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 #### Feature Importance
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-#### Confusion Matrix
-!["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
+
 
 #### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
 
 ## Conclusion
-XGBoost model is an excellent model for predicting whether an employee will leave the company. The best recall score is 0.927136
+XGBoost model is an excellent model for predicting whether an employee will leave the company. The best recall score is 0.927136. There are only 29 employees identified incorrectly as staying that actually left as shown in the Confusion Matrix below.
+#### Confusion Matrix
+!["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 Top 5 features in order of greatest importance. 1. satisfaction_level ('satisfaction') 2. average_monthly_hours 3. last_evaluation 4. number_project 5. tenure
 
