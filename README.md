@@ -12,7 +12,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - [Data Cleaning](#data-cleaning) 
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Preparation for Modeling](#data-preparation-for-modeling)
-- [XGBoost Binomial Classification](#xgboost-binomial-classification)
+- [Modeling: XGBoost Binomial Classification](#modeling-xgboost-binomial-classification)
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
@@ -21,7 +21,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
-- A CSV file for the capstone project was provided by Google/Coursera in a Jupyter Notebook.
+- A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
   
 ### Tools
 - Jupyter Notebook for the entire project including Data Cleaning, Data Analysis, Modeling, and Visualization.
