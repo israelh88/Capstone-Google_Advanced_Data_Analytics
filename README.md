@@ -23,8 +23,13 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
   
 ### Tools
-- Jupyter Notebook for the entire project including Data Cleaning, Data Analysis, Modeling, and Visualization.
-
+- **Python**: For scripting and running the data analysis.
+- **Pandas**: Used for data manipulation and analysis.
+- **NumPy**: Employed for numerical computing.
+- **Matplotlib/Seaborn**: For creating visualizations.
+- **Scikit-learn**: Utilized for machine learning model building.
+- **XGBoost**: For XGBClassifier and Feature Importance Plot
+- 
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
 - Executed **.describe()** for descriptive statistics
