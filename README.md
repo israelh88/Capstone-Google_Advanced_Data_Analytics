@@ -21,6 +21,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   
 ### Data Sources
 - A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
+- [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)
   
 ### Tools
 - **Python**: For scripting and running the data analysis.
@@ -29,6 +30,9 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - **Matplotlib/Seaborn**: For creating visualizations.
 - **Scikit-learn**: Utilized for machine learning model building.
 - **XGBoost**: For XGBClassifier and Feature Importance Plot
+### Data Overview
+- The data file has 15000 rows (including a header) and 10 columns.
+
 
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
