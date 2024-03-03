@@ -85,14 +85,15 @@ XGBoost is an excellent model for predicting whether an employee will leave the 
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 #### Feature Importance Plot
+While reviewing the Feature Importance plot, it’s interesting to note the top factors affecting employee attrition; however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-#### Partial Dependence
-While reviewing the Feature Importance plot, it’s interesting to note the top factors affecting employee attrition; however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+#### Partial Dependence of monthly_hours
+The big revelation from the Partial Dependence plot is how attrition varies by monthly hours worked. It is more apparent that overworked and underworked employees tend to leave the company. A standard workweek consists of 40 hours, roughly 173 hrs per month. Per the plot, employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week. Similarly, there is a tendency for employees to leave when working much less than 40 hours per week--around 30 hours.”
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
-The big revelation from the Partial Dependence plot is how attrition varies by monthly hours worked. Therefore, it is more apparent that overworked and underworked employees tend to leave the company. Given a typical 40-hour week, we expect employees to work about 173 hrs per month. Per the plot, employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week. Similarly, there is a tendency for employees to leave when working much less than 40 hours per week.”
 
+#### Other Top Features
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 - As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
