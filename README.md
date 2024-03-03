@@ -4,7 +4,7 @@
 ## Project Overview
 In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that can predict employees will leave the company. For this task, we used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.
 
-Follow this link for an [Executive Summary](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/e54706bb2a0d4bb5366cadcbd4b7f4a514523b81/Salifort%20Capstone%20Project%20-%20Executive%20Summary%20ih.pdf) of this project.
+Follow this link for my [Executive Summary](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/e54706bb2a0d4bb5366cadcbd4b7f4a514523b81/Salifort%20Capstone%20Project%20-%20Executive%20Summary%20ih.pdf) of this project.
 
 ## Table of Contents
 - [Data Sources](#data-sources)
@@ -73,11 +73,11 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
  
 ### XGBoost Predict on Validation Data
   - XGB_val_preds = xgb_cv.best_estimator_.predict(X_val)
-  - Recall = 0.9171
+  - Recall Score = 0.9171
 
 ### XGBoost Predict on Test Data
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
-  - Recall = 0.9271
+  - Recall Score = 0.9271
  
 ## Conclusion and Insights
 XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
