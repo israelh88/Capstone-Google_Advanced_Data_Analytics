@@ -2,7 +2,7 @@
 ## Salifort Employee Retention Project. 
 
 ## Project Overview
-In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that predicts employees will leave the company. For this task, we used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.  The audience for this exercise is the Salifort Human Resources & Leadership Team.
+In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that predicts employees will leave the company. For this task, I used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.  The audience for this project is the Salifort Human Resources & Leadership Team.
 
 Follow this link for my [Executive Summary](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/e54706bb2a0d4bb5366cadcbd4b7f4a514523b81/Salifort%20Capstone%20Project%20-%20Executive%20Summary%20ih.pdf) for this project.
 
@@ -30,6 +30,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - **Matplotlib/Seaborn**: For creating visualizations.
 - **Scikit-learn**: Utilized for machine learning model building.
 - **XGBoost**: For XGBClassifier and Feature Importance Plot
+
 ### Data Overview
 - The data file has 15000 rows (including a header) and 10 columns.
 ![columns_description](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/852294b8c9eb1ffc406ab781423ea0beb2029259/images/Screenshot%202024-03-03%20155159.png)
