@@ -16,8 +16,8 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - [Model Results on Training Data](#model-results-on-training-data)
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
-- [Conclusion & Insights](#conclusion-&-insights)
-- [Recommendation and Next Steps](#recommendation-and-next-steps)
+- [Conclusion and Insights](#conclusion-and-insights)
+- [Recommendation](#recommendation)
   
 ### Data Sources
 - A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
@@ -79,7 +79,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
   - xgb_test_preds = xgb_cv.best_estimator_.predict(X_test)
   - Recall = 0.9271
  
-## Conclusion & Insights
+## Conclusion and Insights
 XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
@@ -99,7 +99,7 @@ In reviewing the plot of Feature Importance, while it is interesting to see the 
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
-### Recommendation/Next Steps:
+### Recommendation
 Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees' workload, or number of projects. 
 Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
 Ascertain why employees leave after 5 years of tenure.
