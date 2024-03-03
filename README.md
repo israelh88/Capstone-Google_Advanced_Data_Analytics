@@ -53,7 +53,7 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - Set stratify = y due to imbalanced data
 - Used the "validate" set to evaluate the model’s performance during training and tune hyperparameters.
   
-### XGBoost Binomial Classification
+### Modeling: XGBoost Binomial Classification
 - Instantiated the XGBoost classifier and set objective='binary:logistic'. 
 - Tuned the following hyperparameters (cv_params). 
   - 'max_depth': [8,None], 
