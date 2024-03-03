@@ -29,7 +29,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - **Matplotlib/Seaborn**: For creating visualizations.
 - **Scikit-learn**: Utilized for machine learning model building.
 - **XGBoost**: For XGBClassifier and Feature Importance Plot
-- 
+
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
 - Executed **.describe()** for descriptive statistics
