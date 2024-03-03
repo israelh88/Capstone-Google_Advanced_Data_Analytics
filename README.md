@@ -100,7 +100,6 @@ The big revelation from the Partial Dependence plot is how attrition varies by m
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
 
 ### Recommendation
-Find ways to reduce long workweeks (< 45 hrs per week), perhaps by looking into employees' workload, or number of projects. 
 Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
 Ascertain why employees leave after 5 years of tenure.
 For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
