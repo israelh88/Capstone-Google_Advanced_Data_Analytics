@@ -83,17 +83,15 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
-Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
-
-In reviewing the plot of Feature Importance, while it is interesting to see the top factors affecting employee attrition, the plot does not indicate directionality. For example, given that monthly_hours worked is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
 #### Feature Importance Plot
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-
-- Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. Employees are most likely to leave when averaging 250 hours per month, which is approximately 63 hours per week on average. Similarly, there is a tendency for employees to leave when working less than 40 hours per week.”
 #### Partial Dependence
+While reviewing the Feature Importance plot, it’s interesting to note the top factors affecting employee attrition; however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
+The big revelation from the Partial Dependence plot is how attrition varies by monthly hours worked. Therefore, it is more apparent that overworked and underworked employees tend to leave the company. Given a typical 40-hour week, we expect employees to work about 173 hrs per month. Per the plot, employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week. Similarly, there is a tendency for employees to leave when working much less than 40 hours per week.”
 
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 - As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
