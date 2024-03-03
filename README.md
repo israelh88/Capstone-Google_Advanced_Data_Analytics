@@ -83,13 +83,14 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
+Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
 
-In reviewing the plot of Feature Importance, while it is interesting to see the top factors affecting employee attrition, the plot does not indicate directionality. For example, given that monthly_hours worked is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence"**-- a term outside the scope of the course.  This is an insight gained on my own, but admittedly a tip the course suggested about searching for answers beyond the scope of the course.
+In reviewing the plot of Feature Importance, while it is interesting to see the top factors affecting employee attrition, the plot does not indicate directionality. For example, given that monthly_hours worked is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
-#### Feature Importance
+#### Feature Importance Plot
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-### Conclusions based on the Top 5 features in order of greatest importance. 
+
 - Given that 40 hours per week is about the same as 173 hrs per month, when employees work 190 monthly hours (43-hr workweek, which is closet to a normal 40-hr work week), they are least likely to leave according to the chart above for partial dependence of feature = average monthly hours. Employees are most likely to leave when averaging 250 hours per month, which is approximately 63 hours per week on average. Similarly, there is a tendency for employees to leave when working less than 40 hours per week.”
 #### Partial Dependence
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
