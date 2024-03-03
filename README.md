@@ -17,7 +17,6 @@ Follow this link for an [Executive Summary](https://github.com/israelh88/Capston
 - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
 - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
 - [Conclusion & Insights](#conclusion-&-insights)
-    - [Insights](#insights)
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
