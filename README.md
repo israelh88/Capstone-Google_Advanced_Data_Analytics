@@ -32,7 +32,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - **XGBoost**: For XGBClassifier and Feature Importance Plot
 ### Data Overview
 - The data file has 15000 rows (including a header) and 10 columns.
-
+![columns_description](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/852294b8c9eb1ffc406ab781423ea0beb2029259/images/Screenshot%202024-03-03%20155159.png)
 
 ### Data Cleaning
 - Executed **.info()** to gather basic information about the data
