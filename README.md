@@ -1,5 +1,5 @@
 # Capstone Project for Google Advanced Data Analytics Professional Certificate
-# Salifort Employee Retention Project. 
+# Salifort Employee Retention Project
 
 ## Project Overview
 The intended audience for this project is the Salifort Human Resources & Leadership Team.  In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that predicts employees will leave the company.  They have also requested an executive summary.
