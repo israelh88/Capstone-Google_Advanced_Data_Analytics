@@ -113,7 +113,7 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 #### Other Top Features
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects lead to longer hours worked.
-  
+![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/545c11af34cbd8524cc832d6217774171718022c/images/Screenshot%202024-03-03%20222234.png)  
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 
 
