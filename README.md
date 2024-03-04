@@ -19,7 +19,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
   - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
 - [Conclusion and Insights](#conclusion-and-insights)
-- [Recommendation](#recommendation)
+- [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
 - A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
@@ -103,7 +103,7 @@ Feature importance ranks the features based on how much they contribute to the m
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-#### Partial Dependence PLot of monthly_hours
+#### Partial Dependence Plot of monthly_hours
 Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how attrition varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
 
 Given that a standard workweek consists of 40 hours, this is approximately 173 hrs per month.  
@@ -121,8 +121,7 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, employees wait until stock options have vested before quitting.
 
-
-### Recommendation
+### Recommendation and Next Steps
 - Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
 - Ascertain why employees leave after 5 years of tenure.
 - For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
