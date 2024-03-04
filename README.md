@@ -104,7 +104,7 @@ Feature importance ranks the features based on how much they contribute to the m
 #### Partial Dependence PLot of monthly_hours
 Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how attrition varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
 
-Given that a standard workweek consists of 40 hours, this is  approximately 173 hrs per month.  
+Given that a standard workweek consists of 40 hours, this is approximately 173 hrs per month.  
   - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
   - There is a tendency for employees to leave when working 135 hours per month--around 30 hours per week.”
 
@@ -112,11 +112,13 @@ Given that a standard workweek consists of 40 hours, this is  approximately 173 
 
 #### Other Top Features
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
-- As for last_evaluation, better performance leads to an employee leaving, perhaps given their confidence and competence to find a better opportunity elsewhere.
+- It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects lead to longer hours worked.
+  
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
-- It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.
+
 
 ### Recommendation
-Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
-Ascertain why employees leave after 5 years of tenure.
-For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
+- Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
+- Ascertain why employees leave after 5 years of tenure.
+- For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
+- As for last_evaluation, find out why better-performing employees leave.  Do they find a better opportunity elsewhere?
