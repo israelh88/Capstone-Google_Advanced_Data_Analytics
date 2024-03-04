@@ -100,7 +100,11 @@ While reviewing the Feature Importance plot, it’s interesting to note the top 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
 #### Partial Dependence PLot of monthly_hours
-The big revelation from the Partial Dependence plot is how attrition varies by monthly hours worked. It is more apparent that overworked and underworked employees tend to leave the company. A standard workweek consists of 40 hours, roughly 173 hrs per month. Per the plot, employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week. Similarly, there is a tendency for employees to leave when working much less than 40 hours per week--around 30 hours.”
+Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how attrition varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
+
+Given that a standard workweek consists of 40 hours, this is  approximately 173 hrs per month.  
+  - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
+  - There is a tendency for employees to leave when working 135 hours per month--around 30 hours per week.”
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
 
