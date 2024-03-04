@@ -108,11 +108,12 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
   - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
   - There is a tendency for employees to leave when working 135 hours per month--around 30 hours per week.”
 
-![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20155004.png?raw=true)
+![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/09a7e78d86ae38d8573fd90931922327a468ca21/images/Screenshot%202024-03-03%20222559.png)
 
 #### Other Top Features
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects lead to longer hours worked.
+
 ![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/545c11af34cbd8524cc832d6217774171718022c/images/Screenshot%202024-03-03%20222234.png)  
 - As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
 
