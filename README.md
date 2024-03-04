@@ -13,9 +13,9 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Preparation for Modeling](#data-preparation-for-modeling)
 - [Modeling: XGBoost Binomial Classification](#modeling-xgboost-binomial-classification)
-- [Model Results on Training Data](#model-results-on-training-data)
-- [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
-- [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
+  - [Model Results on Training Data](#model-results-on-training-data)
+  - [XGBoost Predict on Validation Data](#xgboost-predict-on-validation-data)
+  - [XGBoost Predict on Test Data](#xgboost-predict-on-test-data)
 - [Conclusion and Insights](#conclusion-and-insights)
 - [Recommendation](#recommendation)
   
