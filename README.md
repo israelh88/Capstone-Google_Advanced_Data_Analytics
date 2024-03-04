@@ -115,7 +115,7 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects lead to longer hours worked.
 
 ![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/545c11af34cbd8524cc832d6217774171718022c/images/Screenshot%202024-03-03%20222234.png)  
-- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, after stock options have vested.
+- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, employees wait until stock options have vested before quitting.
 
 
 ### Recommendation
