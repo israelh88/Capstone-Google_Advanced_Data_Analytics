@@ -41,8 +41,8 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - Executed **.info()** to gather basic information about the data
 - Executed **.describe()** for descriptive statistics
 - Renamed columns and corrected spelling, changed names to snake_case, and made them more concise as needed.
-  e.g., 'average_montly_hours' [sic] becomes 'monthly_hours.'
-- Checked for missing values
+  e.g., 'average_montly_hours' [sic] was changed to 'monthly_hours.'
+- Checked for missing values with .isna().sum. No missing values were found.
 - Removed duplicates with the method, .drop_duplicates()
 
 ### Exploratory Data Analysis
