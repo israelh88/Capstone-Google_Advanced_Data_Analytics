@@ -125,4 +125,4 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 - Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
 - Ascertain why employees leave after 5 years of tenure.
 - For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
-- As for last_evaluation, find out why better-performing employees leave.  Do they find a better opportunity elsewhere?
+- As for last_evaluation, find out why better-performing employees leave.  Do they find a better opportunity elsewhere? Consider offering incentives to longer-term employees.
