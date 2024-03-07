@@ -35,7 +35,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 
 ### Data Overview
 - The data file has 15000 rows (including a header) and 10 columns.
-- Column 'Left' is the target, while the other 9 are features.
+- Column 'Left' is the target, while the other 9 columns are features.
 
 ![columns_description](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/852294b8c9eb1ffc406ab781423ea0beb2029259/images/Screenshot%202024-03-03%20155159.png)
 
