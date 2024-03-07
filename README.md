@@ -45,7 +45,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - Renamed columns and corrected spelling, changed names to snake_case, and made them more concise as needed.
   e.g., 'average_montly_hours' [sic] was changed to 'monthly_hours.'
 - Checked for missing values with .isna().sum. No missing values were found.
-- Removed duplicates with the method, .drop_duplicates()
+- Removed duplicates with the method, **.drop_duplicates().**
 
 ### Exploratory Data Analysis
 - Examined counts of employees who left vs those who stayed.
@@ -54,8 +54,8 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   
 ### Data Preparation for Modeling
 - Converted categorical columns into numeric columns.
-  - Salary from low, medium, high to 0, 1, 2.
-  - Department converted to numeric values with pd.get_dummies.
+  - Changed Salary from low, medium, high to 0, 1, 2.
+  - Converted Department names numeric values with pd.get_dummies.
 
 ### Modeling
 - Set column 'left' as the Target, y.  "Left" means the employee left the company.
@@ -63,7 +63,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - Split the data into training/validate/test splits of 60/20/20
   - X_tr, X_test, y_tr, y_test and set test_size = 0.20.
   - Followed by X_train, X_val, y_train, y_val with test_size = 0.25.
-- Set stratify = y due to imbalanced data
+- Set stratify = y due to the imbalanced data.
 - Used the "validate" set to evaluate the model’s performance during training and tune hyperparameters.
   
 ### Modeling: XGBoost Binomial Classification
@@ -74,7 +74,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - 'learning_rate': [0.2,0.3,0.4],
   - 'n_estimators': [50, 100]
 - Instantiated the GridSearchCV object xgb_cv. 
-- Used refit = 'recall' to minimize false negatives (predicting an employee will stay when they, in fact, leave)
+- Used refit = 'recall' to minimize false negatives (predicting an employee stayed when they left)
 
 ### Model Results on Training Data
 - xgb_cv.fit(X_train, y_train)
@@ -94,12 +94,12 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - Recall Score = 0.9271
  
 ## Conclusion and Insights
-XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** Only 29 employees were identified incorrectly as staying when they left, as indicated in the Confusion Matrix below.
+XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** 29 employees identified incorrectly as staying when they left, while 369 were correctly labeled as leaving, as indicated in the Confusion Matrix below.
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 #### Feature Importance Plot
-Feature importance ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
