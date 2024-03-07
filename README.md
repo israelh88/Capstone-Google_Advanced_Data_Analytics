@@ -23,7 +23,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   
 ### Data Sources
 - A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
-- Coursera obtained the data from here: [Kaggle.](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)
+- Coursera obtained the data from [Kaggle.](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)
   
 ### Tools
 - **Python**: For scripting and running the data analysis.
