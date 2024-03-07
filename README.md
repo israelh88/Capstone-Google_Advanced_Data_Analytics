@@ -2,7 +2,7 @@
 # Salifort Employee Retention Project
 
 ## Project Overview
-The intended audience for this project is the Salifort Human Resources & Leadership Team.  In the scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that predicts employees will leave the company.  They have also requested an executive summary.
+The intended audience for this project is the Salifort Human Resources & Leadership Team.  In this scenario, Human Resources has requested that a data analyst review the results from an employee satisfaction survey to develop a model that predicts employees will leave the company.  They have also requested an executive summary.
 
 For this task, I used XGBoost binary classification as an excellent choice in turnover prediction for improved employee retention and reduced cost of re-training new hires.  
 
