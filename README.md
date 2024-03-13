@@ -94,7 +94,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - Recall Score = 0.9271
  
 ## Conclusion and Insights
-XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** 29 employees identified incorrectly as staying when they left, while 369 were correctly labeled as leaving, as indicated in the Confusion Matrix below.
+XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** The Confusion Matrix shows that the model identified 29 employees incorrectly as staying, while 369 were correctly labeled as leaving, 
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
