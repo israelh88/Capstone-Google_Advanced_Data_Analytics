@@ -94,17 +94,17 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - Recall Score = 0.9271
  
 ## Conclusion and Insights
-XGBoost is an excellent model for predicting whether an employee will leave the company. The best **recall score** is **0.9271.** The Confusion Matrix shows that the model predicted incorrectly that 29 employees stayed, while 369 were correctly labeled as leaving. 
+XGBoost classifier is an excellent model for predicting employee turnover, with the champion **recall score** of **0.9271.** This is illustrated in the Confusion Matrix--the model predicted incorrectly that 29 employees stayed, while 369 were correctly labeled as leaving. 
 #### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 #### Feature Importance Plot
-The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is attrition impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is turnover impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
 #### Partial Dependence Plot of monthly_hours
-Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how attrition varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
+Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how turnover varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
 
 Given that a standard workweek consists of 40 hours, this is approximately 173 hrs per month.  
   - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
@@ -119,7 +119,7 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 - As for employee satisfaction, it is no surprise that less employee satisfaction predicts turnover well. Refer to the partial dependence chart. Satisfaction of 0.1 or less is a definite walk.
 
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
-- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Perhaps, employees wait until stock options have vested before quitting.
+- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Maybe employees choose to wait until stock options have vested before they quit.
 
 ### Recommendation and Next Steps
 - Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
