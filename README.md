@@ -95,15 +95,15 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
  
 ## Conclusion and Insights
 XGBoost classifier is an excellent model for predicting employee turnover, with the champion **recall score** of **0.9271.** This is illustrated in the Confusion Matrix--the model predicted incorrectly that 29 employees stayed, while 369 were correctly labeled as leaving. 
-#### Confusion Matrix
+### Confusion Matrix
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
-#### Feature Importance Plot
+### Feature Importance Plot
 The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is turnover impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
-#### Partial Dependence Plot: Monthly Hours Worked
+### Partial Dependence Plot: Monthly Hours Worked
 A Partial Dependence Plot (PDP) shows how the Target changes when the value of a feature is varied. It significantly revealed how employee turnover varies based on the monthly hours worked. **Both overworked and underworked employees tend to leave the company.**
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
@@ -112,18 +112,18 @@ NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
     - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
     - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
-#### Partial Dependence Plot: Number of Projects
+### Partial Dependence Plot: Number of Projects
 It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects can lead to more hours worked.
 
 ![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/069f5e93a0d227aea46065f0e90e1ff1ec177727/images/Screenshot%202024-03-20%20115348.png)  
 
-#### Partial Dependence Plot: Employee Satisfaction
+### Partial Dependence Plot: Employee Satisfaction
 Employee satisfaction also predicts turnover, as expected. Satisfaction of 0.1 or less is a definite walk.
 
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
 
-#### Partial Dependence Plot: Tenure
-As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees might choose to wait until stock options have vested before they quit.
+### Partial Dependence Plot: Tenure
+As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees often wait until stock options fully vest before leaving the company.
   
 ![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/628f775d64330ed3f478868f35b97d44795abfab/images/Screenshot%202024-03-20%20111823.png)
 
