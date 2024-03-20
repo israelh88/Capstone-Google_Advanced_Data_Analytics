@@ -55,7 +55,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 ### Data Preparation for Modeling
 - Converted categorical columns into numeric columns.
   - Changed Salary from low, medium, high to 0, 1, 2.
-  - Converted Department names numeric values with pd.get_dummies.
+  - Converted Department names into numeric values with pd.get_dummies.
 
 ### Modeling
 - Set column 'left' as the Target, y.  "Left" means the employee left the company.
@@ -64,7 +64,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - X_tr, X_test, y_tr, y_test and set test_size = 0.20.
   - Followed by X_train, X_val, y_train, y_val with test_size = 0.25.
 - Set stratify = y due to the imbalanced data.
-- Used the "validate" set to evaluate the model’s performance during training and tune hyperparameters.
+- Used a validation set to evaluate the model’s performance.
   
 ### Modeling: XGBoost Binomial Classification
 - Instantiated the XGBoost classifier and set objective='binary:logistic'. 
@@ -74,7 +74,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - 'learning_rate': [0.2,0.3,0.4],
   - 'n_estimators': [50, 100]
 - Instantiated the GridSearchCV object xgb_cv. 
-- Used refit = 'recall' to minimize false negatives (predicting an employee stayed when they left)
+- Used refit = 'recall' to minimize false negatives--predicting an employee stayed when they left.
 
 ### Model Results on Training Data
 - xgb_cv.fit(X_train, y_train)
