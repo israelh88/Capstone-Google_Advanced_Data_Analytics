@@ -22,8 +22,7 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
 - [Recommendation and Next Steps](#recommendation-and-next-steps)
   
 ### Data Sources
-- A CSV file was provided in a Jupyter Notebook for the capstone project by Google/Coursera.
-- Coursera obtained the data from [Kaggle.](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)
+- Google/Coursera provided a Jupyter Notebook with the CSV file of the Salifort employee data which was obtained from [Kaggle.](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)
   
 ### Tools
 - **Python**: For scripting and running the data analysis.
