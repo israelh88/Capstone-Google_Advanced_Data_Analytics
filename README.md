@@ -128,7 +128,7 @@ As for tenure, there's something unusual about the higher tendency to leave the 
 ![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/628f775d64330ed3f478868f35b97d44795abfab/images/Screenshot%202024-03-20%20111823.png)
 
 ### Recommendation and Next Steps
-- Alleviate the load on those with 6 or more projects--possibly dividing the work with those who tend to have much less than 160 monthly hours. 
+- Alleviate the load on those with 6 or more projects by dividing the work among those with much shorter than 40-hour workweeks. 
 - Ascertain why employees leave after 5 years of tenure.
-- For employees with excellent evaluations, discuss what incentives would help retain these talented individuals.
+- For employees with excellent evaluations, offer incentives to retain these talented individuals.
 - As for last_evaluation, find out why better-performing employees leave.  Do they find a better opportunity elsewhere? Consider offering incentives to longer-term employees.
