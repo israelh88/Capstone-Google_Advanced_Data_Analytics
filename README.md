@@ -104,13 +104,13 @@ The Feature Importance plot ranks the features based on how much they contribute
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
 #### Partial Dependence Plot of monthly_hours
-Partial dependence is a way of measuring how the predicted outcome changes when the value of a feature is varied. It was a big revelation how turnover varies by monthly_hours worked--overworked and underworked employees tend to leave the company. 
-
-Given that a standard workweek consists of 40 hours, this is approximately 173 hrs per month.  
-  - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
-  - There is a tendency for employees to leave when working 135 hours per month--around 30 hours per week.”
+A Partial Dependence Plot (PDP) shows how the Target changes when the value of a feature is varied. It significantly revealed how employee turnover varies based on the monthly hours worked. **Both overworked and underworked employees tend to leave the company.**
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
+
+NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
+   - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
+   - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
 - It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects lead to longer hours worked.
 
