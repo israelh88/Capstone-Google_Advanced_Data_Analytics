@@ -120,7 +120,8 @@ Given that a standard workweek consists of 40 hours, this is approximately 173 h
 
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
 
-- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Maybe employees choose to wait until stock options have vested before they quit.
+- As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees may choose to wait until stock options have vested before they quit.
+  
 ![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/628f775d64330ed3f478868f35b97d44795abfab/images/Screenshot%202024-03-20%20111823.png)
 
 ### Recommendation and Next Steps
