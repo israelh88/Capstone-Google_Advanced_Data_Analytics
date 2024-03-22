@@ -110,25 +110,23 @@ Employee satisfaction predicts turnover, as expected. Satisfaction of 0.1 or les
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
 
 ### Partial Dependence Plot: Monthly Hours Worked
-Here, the Partial Dependence Plot is quite revealing, as it shows the relationship of the target vs the continuous variable, monthly hours worked. In the plot below, you can easily see that **both overworked and underworked employees tend to leave the company.**
+Here, the Partial Dependence Plot is quite revealing, as it shows the relationship of the target vs the continuous variable, monthly hours worked. In the plot below, **both overworked and underworked employees tend to leave the company.**
+  - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
+  - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
 
 NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
 
-In summary:
-    - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
-    - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
-
 ### Partial Dependence Plot: Last Evaluation
 Employees with very low last evaluation scores are more likely to leave the company. Surprisingly, employees with very high last evaluation scores also exhibit a higher likelihood of leaving (target value close to 1). Employees with mid-range evaluation scores tend to stay (target value closer to 0).
 
-![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/aee7bb1c4d739b30d7b3d513e85cc26d9ca8da0e/images/Screenshot%202024-03-22%20012713.png)
+![PDP_last eval](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/aee7bb1c4d739b30d7b3d513e85cc26d9ca8da0e/images/Screenshot%202024-03-22%20012713.png)
 
 ### Partial Dependence Plot: Number of Projects
 It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects can lead to more hours worked.
 
-![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/069f5e93a0d227aea46065f0e90e1ff1ec177727/images/Screenshot%202024-03-20%20115348.png)  
+![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/d82f2c4f8fe969ccecd0af26cf990130c648c749/images/Screenshot%202024-03-22%20053716.png)  
 
 ### Partial Dependence Plot: Tenure
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees often wait until stock options fully vest before leaving the company.
