@@ -126,6 +126,11 @@ As for tenure, there's something unusual about the higher tendency to leave the 
   
 ![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/628f775d64330ed3f478868f35b97d44795abfab/images/Screenshot%202024-03-20%20111823.png)
 
+### Partial Dependence Plot: Last Evaluation
+Employees with very low last evaluation scores are more likely to leave the company. Surprisingly, employees with very high last evaluation scores also exhibit a higher likelihood of leaving (target value close to 1). Employees with mid-range evaluation scores tend to stay (target value closer to 0).
+
+![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/aee7bb1c4d739b30d7b3d513e85cc26d9ca8da0e/images/Screenshot%202024-03-22%20012713.png)
+
 ### Recommendation and Next Steps
 - Alleviate the load on those with 6 or more projects by dividing the work among those with much shorter than 40-hour workweeks. 
 - Ascertain why employees leave after 5 years of tenure.
