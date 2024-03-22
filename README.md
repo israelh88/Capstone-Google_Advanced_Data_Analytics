@@ -98,7 +98,7 @@ XGBoost classifier is an excellent model for predicting employee turnover, with 
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 ### Feature Importance Plot
-The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the plot does not show the direction of their impact. For example, given that **monthly_hours worked** is a top 5 feature, how is turnover impacted across the range of hours worked in the data set? My curiosity led me to a Google search digging deeper into Feature Importance, which led me to **"Partial Dependence Plot"** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the scores do not indicate the direction of their impact. For example,how is turnover impacted across the range of the employee's monthly hours worked? My curiosity led me to a Google search on Feature Importance which resulted in learning about **"Partial Dependence Plots."** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
