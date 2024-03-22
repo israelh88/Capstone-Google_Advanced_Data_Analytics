@@ -110,11 +110,12 @@ Employee satisfaction predicts turnover, as expected. Satisfaction of 0.1 or les
 ![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
 
 ### Partial Dependence Plot: Monthly Hours Worked
-This plot revealed how employee turnover varies based on the monthly hours worked. **Both overworked and underworked employees tend to leave the company.**
+Here, the Partial Dependence Plot is quite revealing, as it shows the relationship of the target vs the continuous variable, monthly hours worked. In the plot below, you can easily see that **both overworked and underworked employees tend to leave the company.**
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
 
 NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
+In summary:
     - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
     - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
