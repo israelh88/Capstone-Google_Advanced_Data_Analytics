@@ -114,7 +114,7 @@ Here, the Partial Dependence Plot is quite revealing, as it shows the relationsh
   - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
   - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
-![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
+![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/d82f2c4f8fe969ccecd0af26cf990130c648c749/images/Screenshot%202024-03-22%20053716.png)
 
 NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
 
@@ -126,7 +126,7 @@ Employees with very low last evaluation scores are more likely to leave the comp
 ### Partial Dependence Plot: Number of Projects
 It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects can lead to more hours worked.
 
-![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/d82f2c4f8fe969ccecd0af26cf990130c648c749/images/Screenshot%202024-03-22%20053716.png)  
+![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/285b43df39bfdfd21b320a18928662a63f378873/images/Screenshot%202024-03-20%20115348.png)  
 
 ### Partial Dependence Plot: Tenure
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees often wait until stock options fully vest before leaving the company.
