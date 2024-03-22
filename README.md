@@ -98,12 +98,19 @@ XGBoost classifier is an excellent model for predicting employee turnover, with 
 !["SalifortCapstoneProjectConfusionMatrix"](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20020321.png?raw=true)
 
 ### Feature Importance Plot
-The Feature Importance plot ranks the features based on how much they contribute to the model’s predictions, however, the scores do not indicate the direction of their impact. For example,how is turnover impacted across the range of the employee's monthly hours worked? My curiosity led me to a Google search on Feature Importance which resulted in learning about **"Partial Dependence Plots."** Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.
+The Feature Importance Plot is a bar chart that helps us understand which features (variables) have the most significant impact on the target variable (in this case, the likelihood of an employee leaving the company). I've shared below the plot for the XGBoost model results.
 
 !["SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/main/images/Screenshot%202024-02-28%20154746.png?raw=true)
 
+Although this Pareto is useful, it does not indicate the directionality of the effects of the features. So, my curiosity led me to a Google search on Feature Importance which resulted in learning about **"Partial Dependence Plots,"** a linear plot that goes hand-in-hand with Feature Importance Plots. Although partial dependence was beyond the course’s scope, I gained insight into it independently, inspired by the course’s advice to seek knowledge outside the curriculum.  It is useful in understanding the effects of the features; therefore, I have included the Partial Dependence Plots for the Top 5 features.
+
+### Partial Dependence Plot: Employee Satisfaction
+Employee satisfaction predicts turnover, as expected. Satisfaction of 0.1 or less is a definite walk.
+
+![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
+
 ### Partial Dependence Plot: Monthly Hours Worked
-A Partial Dependence Plot (PDP) shows how the Target changes when the value of a feature is varied. It significantly revealed how employee turnover varies based on the monthly hours worked. **Both overworked and underworked employees tend to leave the company.**
+This plot revealed how employee turnover varies based on the monthly hours worked. **Both overworked and underworked employees tend to leave the company.**
 
 ![SalifortCapstoneProjectFeatureImportance](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/2f51c2e95937db10245058d0f8d98f97e93b3aa8/images/Screenshot%202024-03-20%20120152.png)
 
@@ -111,25 +118,20 @@ NOTE: A standard workweek of 40 hours equals approximately 173 hrs per month.
     - Salifort employees are most likely to leave when averaging 250 hours per month, which equates to approximately 63 hours per week.
     - Additionally, employees tend to leave when working 135 hours per month--around 30 hours per week.
 
+### Partial Dependence Plot: Last Evaluation
+Employees with very low last evaluation scores are more likely to leave the company. Surprisingly, employees with very high last evaluation scores also exhibit a higher likelihood of leaving (target value close to 1). Employees with mid-range evaluation scores tend to stay (target value closer to 0).
+
+![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/aee7bb1c4d739b30d7b3d513e85cc26d9ca8da0e/images/Screenshot%202024-03-22%20012713.png)
+
 ### Partial Dependence Plot: Number of Projects
 It is not unexpected that the number of projects affects employee turnover. At 6 or more projects, there is a tendency for employees to leave the company.  More projects can lead to more hours worked.
 
 ![PDPnumber_projects](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/069f5e93a0d227aea46065f0e90e1ff1ec177727/images/Screenshot%202024-03-20%20115348.png)  
 
-### Partial Dependence Plot: Employee Satisfaction
-Employee satisfaction also predicts turnover, as expected. Satisfaction of 0.1 or less is a definite walk.
-
-![PDPsatisfaction](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/5d8fbb66b05f6ef3268e43f62b82052c94af51dd/images/Screenshot%202024-03-03%20224048.png)
-
 ### Partial Dependence Plot: Tenure
 As for tenure, there's something unusual about the higher tendency to leave the company after 5 years. Employees often wait until stock options fully vest before leaving the company.
   
 ![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/628f775d64330ed3f478868f35b97d44795abfab/images/Screenshot%202024-03-20%20111823.png)
-
-### Partial Dependence Plot: Last Evaluation
-Employees with very low last evaluation scores are more likely to leave the company. Surprisingly, employees with very high last evaluation scores also exhibit a higher likelihood of leaving (target value close to 1). Employees with mid-range evaluation scores tend to stay (target value closer to 0).
-
-![PDP_tenure](https://github.com/israelh88/Capstone-Google_Advanced_Data_Analytics/blob/aee7bb1c4d739b30d7b3d513e85cc26d9ca8da0e/images/Screenshot%202024-03-22%20012713.png)
 
 ### Recommendation and Next Steps
 - Alleviate the load on those with 6 or more projects by dividing the work among those with much shorter than 40-hour workweeks. 
