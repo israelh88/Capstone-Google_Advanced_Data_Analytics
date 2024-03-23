@@ -57,13 +57,13 @@ Follow this link for my [Executive Summary](https://github.com/israelh88/Capston
   - Converted Department names into numeric values with pd.get_dummies.
 
 ### Modeling
-- Set column 'left' as the Target, y.  "Left" means the employee left the company.
-- All other columns are features and were set as X.
-- Split the data into training/validate/test splits of 60/20/20
+- Column 'left' is the Target, **y.**  "Left" as in the employee left the company.
+- All other columns are features and were set as **X.**
+- I split the data into training/validate/test splits of 60/20/20.
   - X_tr, X_test, y_tr, y_test and set test_size = 0.20.
   - Followed by X_train, X_val, y_train, y_val with test_size = 0.25.
-- Set stratify = y due to the imbalanced data.
-- Used a validation set to evaluate the model’s performance.
+- I set tratify = y (yes) due to the imbalanced data.
+- A validation set is used to evaluate the model’s performance.
   
 ### Modeling: XGBoost Binomial Classification
 - Instantiated the XGBoost classifier and set objective='binary:logistic'. 
